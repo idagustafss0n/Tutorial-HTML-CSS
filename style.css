@@ -1,0 +1,259 @@
+header{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    min-width: 850px;
+    z-index: 1;
+    background-color: #CF5230;
+    opacity: 0.8;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 450%;
+    top: 120px;
+    min-height: 675px;
+    min-width: 850px;
+    left: 0px;
+    background-image: url(höst.jpg);
+    background-attachment: fixed;
+}
+.leftcontent{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: lightblue;
+    opacity: 0;
+}
+.middlecontent{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0px;
+    left: 20%;
+    z-index: 0;
+    background-color: #d3cec6;
+}
+article{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.rightcontent{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: lightyellow;
+    opacity: 0;
+}
+footer{
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    z-index: 0;
+    width: 100%;
+    border-top: 1px solid black; 
+    background-color: #CF5230;
+    opacity: 0.8;
+    color: black;
+    padding: 1px;
+    text-align: center;
+}
+
+/* MENY */
+#centerTable {
+	display: table;   /* Allow t  he centering to work */
+	margin: 0 auto;
+}
+#horizontal-list {
+	list-style: none;
+	} 
+#horizontal-list li {
+	display: inline;
+    margin: 9vh;
+	} 
+
+    /* TEXT */
+small{
+    text-align: center;
+    font-size: 1.5vh;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.2;
+  }
+  h2{
+    text-align: center;
+    color: white;
+    font-size: 4vh;
+    font-family: 'Arima Madurai', cursive;
+    word-spacing: 30px;
+    letter-spacing: 2px;
+    line-height: 20%;
+  }
+  h3{
+    font-size: 3vh;
+    font-family: 'Karla', sans-serif;
+    color: rgb(173, 88, 66);
+  }
+  .meny{
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Arima Madurai', cursive;
+  }
+  a{
+    font-size: 2vh;
+    font-family: 'Karla', sans-serif;
+    color: black;
+    line-height: 20%;
+
+
+  }
+  p{
+    font: 2vh;
+    font-family: 'Karla', sans-serif;
+    color: black; 
+    line-height: 1.2;
+  }
+  /* HTML - SIDAN*/
+.tabell {
+    border: 1px solid black;
+    text-align: center;
+    background-color: #db6f30;
+    font-family: 'Karla', sans-serif;
+  }
+  ol{
+    list-style-type: upper-roman;
+    font-family: 'Karla', sans-serif;
+  }
+  ul{
+    font-family: 'Karla', sans-serif;
+  }
+  dl{
+    font-family: 'Karla', sans-serif;
+  }
+  form{
+    font-family: 'Karla', sans-serif;
+  }
+  /*CSS-SIDAN*/
+  div#box1 {
+      background-color: #db6f30;
+      width: 150px;
+      height: 150px;
+    border: 1px solid black;
+  }
+  div#box2{
+    background-color: #000000bb;
+    width: 320px;
+    font: 18px georgia;
+    border: 2px solid #db6f30;
+    padding: 5px;
+  }
+  #box4{
+    background-color: #db6f30;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  #box5{
+    background-color: #db6f30;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 20%;
+    border: 1px solid black;
+  }
+  div#meddelande {
+    font-weight: bold;
+    position: fixed;
+    bottom:25px;
+    right: 0px;
+    z-index: 0;
+    width: 500px;
+    border: 3px solid black; 
+    background-color: #db6f30a1;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    }
+
+#textarea{
+    color: blue;
+    font: 15px times;
+  }
+  
+#textarea2{
+    color: #CF5230;
+    font: 2vh arial;
+  }
+  .centreradtext{
+    text-align: center;
+  }
+  .högerjusterad{
+    text-align: right;
+  }
+  .normaltext{ 
+    word-spacing: normal;
+  }
+  .långtavstånd{ 
+    word-spacing: 30px;
+    letter-spacing: 3px;
+  }
+  .kortavstånd{ 
+    word-spacing: -1px;
+    letter-spacing: -2px;
+  }
+  .third {
+    float:left; /* undviker radbrytning för block-element */
+    width:33%;
+  }
+  .third img{
+    width: 90%;
+    border-radius: 20px;
+  }
+  .box3{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(38, 109, 38);
+    border: 3px solid black;
+    padding: 20px;
+    margin: 30px;
+  }
+  #img1{
+    width: 300px; 
+    height: 300px;
+  }
+  #img2{
+  height: 300px;
+  }
+  #Sticky{
+    position: sticky;
+    border: 3px solid black;
+    background-color: #cf523052;
+    bottom: 30px;
+    left: 0;
+  }
+  #relative{
+    position: relative;
+    border: 2px solid #CF5230;
+    height: 300px;
+    width: 300px;
+  }
+  #Absolute{
+    position: absolute;
+    border: 2px solid #CF5230;
+    height: 100px;
+    width: 100px;
+    right: 10px;
+    bottom: 20px;
+  }
+  
+  /*OM MIG-SIDAN*/
+  

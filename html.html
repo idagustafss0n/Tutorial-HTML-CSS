@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Star.png">
+    <title>Ida Gustafsson | start</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Karla&display=swap" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <h2>IDA GUSTAFSSON</h2>  
+        <div id="centerTable">
+            <ul id="horizontal-list">
+                <!--
+                <li><a href="start.html" class="meny">START</a></li>-->
+                <li><a href="html.html" class="meny">HTML</a></li>
+                <li><a href="css.html" class="meny">CSS</a></li>
+               <!-- <li><a href=""class="meny">PROJEKTARBETE</a></li>-->
+                <!--<li><a href="ommig.html" class="meny">OM MIG</a></li>-->
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="leftcontent"></div>
+
+        <div class="middlecontent">
+        <article> <br>
+            <h1>Information om HTML</h1>
+
+            <h3>HTML grunder</h3>
+            <p>
+                Ett html dokument består av &lt;head&gt; och &lt;body&gt;. Mellan Head skrivs information som inte syns på sidan, till exempel sökoptimering ligger där. Även bild och text som syns på webbläsar-fliken står i head. 
+            </p>
+            <p>
+                Mellan Body ligger all kod som sedan ska synas på hemsidan.Bland annat text, bilder, formulär, tabeller. 
+            </p>
+            <p>Både head och body ligger mellan &lt;html&gt;</p>
+
+            <h3>HTML element</h3>
+            <h1>Det går att göra en stor rubrik i HTML genom att använda H1.</h1>
+            <h6>Det finns sex stycken rubriker av olika nivåer, detta är den minsta, H6</h6>
+            <p>För att skriva brödtest används &lt;p&gt;. Det går även att lägga in <br> en enkel radbrytning med hjälp av &lt;br&gt;	.</p>
+            
+            <h3>Listor</h3>
+            <p>Punktlistor går att göra i HTML. </p>
+            <p> Unordered list</p>
+            <ul>
+                <li> Punkt ett</li>
+                <li> Punkt två</li>
+            </ul>
+
+            <p>Ordered list</p>
+            <ol>
+                <li> Punkt ett</li>
+                <li> Punkt två</li>
+            </ol>
+
+            <p>Description List</p>
+            <dl>
+                <dt>Hundraser från Nederländerna</dt>
+                <dd>- Stabijhoun </dd>
+                <dd>- Schapendoes </dd>
+                <dd>- Kooikerhondje </dd>
+                <dd>- Drentsche patrijshond </dd>
+
+                <dt>Hundraser från Tyskland</dt>
+                <dd>-Rottweiler</dd>
+                <dd>-Tysk schäferhund</dd>
+                <dd>-Grand danois</dd>
+                <dd>-Kleiner münsterländer</dd>
+              </dl>
+            
+            <h3>Kommentarer</h3>
+            <p>Varsomhelst i html dokumentet går det att göra kommentarer i koden, då används &lt;!--kommentar som inte syns på hemsidan--&gt;</p>  
+
+            <p>För att göra kommer i css-filen skrivs /* kommentar */</p>
+            <h3>Länkar</h3>
+            <p>Det går att länka både till externa länkar och länkar inom hemsidan. Då används taggen &lt;a&gt; med atributet href</p>
+            <a href="https://www.google.se/">Länk till en extern hemsida.</a> <br>
+            <p>Här används absolut sökväg. Vi har fyllt i den fullständiga adressen till hemsidan.</p>
+            <a href="css.html">Länk till sidan CSS på denna hemsida.</a><br>
+            <p>Här används relativ sökväg. Vi har länkat till en fil som är relativ i förhållande till denna sida.</p>
+
+            <h3>Formulär</h3>
+            <p>Det går att skapa formulär. Det finns många olika alternativ. Bland annat: knappar, rulllistor, textrutor, fält för lösenord.</p>
+                <form onsubmit="alert('Tack! Formuläret är skickat!');">
+                    
+                    
+                <label>Antal (1-10):</label>
+                <input type="number" min="1" max="10"><br>
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email"> <br>
+
+                <label for="pwd">Lösenord:</label>
+                <input type="password" id="pwd" name="pwd"> <br>
+
+                Range:
+                <input type="range" name="range" min="0" max="50" step="5"><br>
+
+                <label id="text"> Skriv något:</label> <br>
+                <textarea placeholder="Det här försvinner när du skriver i rutan" rows="4" cols="50"></textarea> <br>
+
+                <p>Hur vill du ha återkoppling?</p>
+                <input type="radio" id="mejl" name="återkoppling" value="email">
+                <label for="mejl">Mejl</label><br>
+                <input type="radio" id="samtal" name="återkoppling" value="call">
+                <label for="samtal">Samtal</label><br>  
+                <input type="radio" id="sms" name="återkoppling" value="text">
+                <label for="sms">SMS</label> <br><br>
+
+                <input type="reset" value="reset"><br>
+                <input type="submit" value="Submit"> 
+
+                </form>
+
+            <h3>Tabeller</h3>
+            <p>Det går att göra tabeller i html</p> 
+            <table>
+                <tr>
+                    <th>Land</th>
+                    <th>Huvudstad</th>
+                    <th>Världsdel</th>
+                </tr>
+                <tr>
+                    <td>Sverige</td>
+                    <td>Stockholm</td>
+                    <td>Europa</td>
+                </tr>
+                <tr>
+                    <td>Kina</td>
+                    <td>Peking</td>
+                    <td>Asien</td>
+                </tr>
+            </table>
+            <br>
+            <p>Tabell som är stylad i css</p>
+                <table class="tabell">
+                    <tr class="tabell">
+                        <th class="tabell">Hundras</th>
+                        <th class="tabell">Ursprungsland</th>
+                        <th class="tabell">Användning</th>
+                    </tr>
+                    <tr class="tabell">
+                        <td class="tabell">Stabijhoun</td>
+                        <td class="tabell">Nederländerna</td>
+                        <td class="tabell">Gårdshund</td>
+                    </tr>
+                    <tr class="tabell">
+                        <td class="tabell">Golden Retriever</td>
+                        <td class="tabell">Storbrittanien</td>
+                        <td class="tabell">Apporterande fågelhund</td>
+                    </tr>
+                </table>
+
+            <h3>Bilder</h3>
+            <p>Det går även att lägga in bilder</p>
+            <p>Bilder läggs in genom taggen &lt;img&gt; och attributen src och alt</p>
+            <img src="Pumpa1.jpg" alt="Bild på flera pumpor på en höbal" width="400">
+
+            <h3>Klasser och ID</h3>
+            <p>
+                Klasser och ID går att använda i htmk filen för att grupera eller separera ett textstycke, box eller liknande för att 
+                kunna styla detta i css. 
+            </p>
+            <p>Klasser betecknas med class=XX i html-filen och .XX i css-filen. En klass går att använda flera gånger under samma dokument. </p>
+            <p>ID betecknas med id=XX i htmk-filen och #XX i css-filen. Id går bara att användas på ett enskilt element. </p>
+            <p>Vid en konflik mellan klass, id och typselektor (bland annat p och h-taggar) så vinner id, sen klass och sist typselektor</p>
+
+
+
+
+        </article>
+        </div>
+        <div class="rightcontent"></div>
+    </main>
+
+    <footer>
+        <small> &copy; | Ida Gustafsson | idagustafsson1995@live.se</small>
+    </footer>
+</body>
+</html>

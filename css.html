@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Star.png">
+    <title>Ida Gustafsson | start</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Karla&display=swap" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <h2>IDA GUSTAFSSON</h2>  
+        <div id="centerTable">
+            <ul id="horizontal-list">
+                 <!-- <li><a href="start.html" class="meny">START</a></li> -->
+                <li><a href="html.html" class="meny">HTML</a></li>
+                <li><a href="css.html" class="meny">CSS</a></li>
+                <!-- <li><a href=""class="meny">PROJEKTARBETE</a></li> -->
+                <!-- <li><a href="ommig.html" class="meny">OM MIG</a></li> -->
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="leftcontent"></div>
+
+        <div class="middlecontent">
+        <article> <br>
+
+            <h1>Information om CSS</h1>
+            <h3>Boxar</h3>
+            <p>Det går att göra boxar</p>
+            <div id="box1"></div> <br>
+            <p>Border-radius ändrar hörnen, går att göra en cirkel eller rundade hörn.</p>
+            <div id="box4"></div> <br>
+            <div id="box5"></div> <br>
+            <div id="box2">Det går även att skapa boxar med text i.</div>
+            
+            <h3>Text, font, färg och storlek</h3>
+            <p id="textarea">
+                Genom css går det att ändra font, storlek och färg på text. 
+            </p>
+            <p id="textarea2">
+                Det här textstycket är skrivet i &lt;p&gt; men som ni kan se är inte utseendet detsamma som tidigare användning av &lt;p&gt;. 
+                Det är möjligt tack vara id. 
+            </p>
+            <p>
+                Klasser och id gör det möjligt att designa ett element annorlunda än egenskaperna elementen tidigare fått. 
+            </p>
+            
+
+            <p> Genom elementet "span" går det att ändra text direkt i ett annat element. Vi demonstrerar det via text-decoration. 
+                Text-decoration gör att vi kan ge texten <span style="text-decoration: overline;">överstruktet</span> ,
+                <span style="text-decoration: underline;">understruket</span> ,
+                <span style="text-decoration: line-through;">genomstruket</span> och 
+                <span style="text-decoration: line-through overline underline;">alla tre</span>
+
+            <p>I exemplet ovan är css koden skriven inline, vilket innebär att den är skriven i html koden. 
+                Fler alternativ är intern, där css-koden ligger i head på html-koden och även extern, där css-koden ligger i 
+                ett separat dokument. Det är det sistnämnda som rekomenderas. 
+            </p>
+         
+            <h3>Text-align</h3>
+           <p class="centreradtext">Texten är centrerad</p>
+           <p class="högerjusterad">Texten är högerjusterad</p>
+
+           <h3>Word-spacing & letter-spacing</h3>
+           <p class="normaltext">Normalt avstånd</p>
+           <p class="långtavstånd">Långt avstånd både mellan bokstäver och ord</p>
+           <p class="kortavstånd">Kort avstånd både mellan bokstäver och ord</p>
+
+           <h3>Prioriteringsordning</h3>
+           <p>Prioriteringsordning för css, där 1 har lägst prioritet och 3 har högst prioritet</p>
+           <ol>
+               <li>Extern CSS</li>
+               <li>Intern CSS</li>
+               <li>Inline CSS</li>
+           </ol>
+           <p>Prioriteringsordning för id, klass och typselektor. där 1 har lägst prioritet och 3 har högst prioritet</p>
+            <ol>
+                <li>Typselektor</li>
+                <li>Klass</li>
+                <li>Id</li>
+            </ol>
+            <p>Undantaget för detta är !important-regeln. Skrivs det in i css-filen bakom vald egenskap kommer den att prioriteras.</p>
+           
+            <h3>Bilder</h3>
+
+            <div class="third"><img src="pumpa3.jpg" alt="Bild på halloweenpumpa med tomtebloss"></div>
+            <div class="third"><img src="pumpa3.jpg" alt="Bild på halloweenpumpa med tomtebloss"></div>
+            <div class="third"><img src="pumpa3.jpg" alt="Bild på halloweenpumpa med tomtebloss"></div> 
+
+            <p>Det går att välja både höjd och bredd på en bild. Viktigt att tänka på då är att välja 
+                mått utifrån hur bilden ser ut. Annars kan bilden bli ihoptryckt eller utdragen.</p>
+            
+            <img id="img1" src="pumpa2.jpg" alt="Bild på halloweenpumpa som ler">
+            <img id="img2" src="pumpa2.jpg" alt="Bild på halloweenpumpa som ler">
+
+            <h3>Padding & margin</h3>
+            <div class="box3">
+                <p>Texten är innehållet i boxen, mellan innehåll och kanten finns padding. Sen kommer kanten (svart färg).
+                    utanför kanten finns marginalen. 
+                </p>
+            </div>
+
+            <h3>Positioner</h3>
+            <p>Det finns fem olika positioner inom css.</p>
+                <ul>
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>fixed</li>
+                    <li>absolute</li>
+                    <li>sticky</li>
+                </ul>
+            <p>Med position static lägger sig innehållt exakt där det skulle lägga sig även utan formatering.</p>
+            <p>Med position relative flyttar du det påverkade innehållet till önskat ställe men med det ursprungliga stället som utgångsläge.</p>
+            <p>Med position fixed väljer du hur ett visst element ska placeras i förhållande till webbläsarfönstret, fixerat. Rutan nere i högra hörnet är placerade med fixed</p>
+            <p>Med position absolute kan du placera ett element på valfritt ställe på webbsidan. Den absoluta positionering är relativt föräldraelementet.</p>
+            <p>Med position sticky fastnar elementet i toppen av sidan när man scrollar. Rutan nedanför är är sticky 20px ovanför botten.</p>
+
+            <div id="Sticky">
+                Rutan är sticky
+                </div>
+           <br>
+            <div id="relative">
+                Rutan har position relative. 
+                <div id="Absolute">
+                    Rutan har position absolute.
+                </div>
+            </div>
+            <div id="meddelande">
+                Denna ruta är fixerad i nedre högra hörnet.
+               </div>
+
+        </article>
+        </div>
+        <div class="rightcontent"></div>
+
+    </main>
+
+    <footer>
+        <small> &copy; | Ida Gustafsson | idagustafsson1995@live.se</small>
+    </footer>
+</body>
+</html>
